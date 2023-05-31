@@ -4,21 +4,16 @@ public:
     //variable declaration
     int new1;
     int new2;
-    int sum;
-    int index0;
-    int index1;
-    int index2;
-    int index3;
+    string strTemp = to_string(num);
 
-    index0 = num / 1000;
-    index1 = (num / 100) % 10;
-    index2 = (num / 10) % 10;
-    index3 = num % 10;
+    //sort num
+    sort(strTemp.begin(), strTemp.end());
+    num = stoi(strTemp);
 
-    new1 = index0 + index1;
-    new2 = index2 + index3;
+    //extract indexes
+    new1 = (num / 1000) * 10 + ((num / 10) % 10);
+    new2 = ((num / 100) % 10) * 10 + (num % 10);
 
-    sum = new1 + new2;
-    return sum;
+    return new1 + new2; //return minimum sum
     }
 };
