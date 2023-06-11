@@ -23,6 +23,6 @@ public:
             }
         }
         
-        return counter;
+        return counter; //return counter
     }
 };
