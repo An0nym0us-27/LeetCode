@@ -1,15 +1,16 @@
 class Solution {
 public:
     int xorOperation(int n, int start) {
-        int temp = start;
+        int ans = 0; //xor result
 
-        int* nums= new int[n];
+        //array declaration
+        int* nums = new int[n];
         for(int i = 0; i < n; i++){
             nums[i] = (start + 2 * i);
-            temp ^= nums[i];
+            ans ^= nums[i];
         }
-        delete[] nums;
+        delete[] nums; //deallocate nums memory
 
-        return temp;
+        return ans; //return xor result
     }
 };
