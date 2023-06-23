@@ -1,20 +1,15 @@
 class Solution {
 public:
     vector<int> shuffle(vector<int>& nums, int n) {
-        int size = nums.length;
-        int middle = (size / 2)
+        vector<int> shuffled; //new vector to store shuffled vals
 
-        if(size % 2 == 0){
-            for(int i = 1; i <= middle; i++){
-                for(int j = middle; j < size; j++){
-                    int next = nums[i+1];
-                    
-                    temp = nums[i];
-                    nums[i] = nums[j];
-
-
-                }
-            }
+        //shuffle vector and push back vals
+        for(int i = 0; i < n; i++){
+            int j = n;
+            
+            shuffled.push_back(nums[i]);
+            shuffled.push_back(nums[i+j]);
         }
+        return shuffled; //return shuffled vector
     }
 };
