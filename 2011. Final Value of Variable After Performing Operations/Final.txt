@@ -1,1 +1,0 @@
-FinalValueOfVariableAfterPerformingOperations.txt
