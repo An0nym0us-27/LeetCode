@@ -1,0 +1,3 @@
+The take away I had from this problem was not only implementing a hash map but also learning how to use the frequency map structure in the hash map.
+Before this I couldnt figure out why my dictionary would not detect duplicates but when I was adding values from the list, it does not add duplicates,
+so the solution was to implement a hash map that kept track of the frequency of the value in the hash map.
