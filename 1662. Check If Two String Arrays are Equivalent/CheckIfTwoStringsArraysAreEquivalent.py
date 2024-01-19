@@ -16,3 +16,6 @@ class Solution:
             result = False #else is false
 
         return result #return result
+
+    #I learned after that one of the optimal solutions was just to do return "".join(word1) == "".join(word2), I had initially started with
+    #that but did not have the correct syntax which is why I thought I had to do a string for that method
