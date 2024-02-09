@@ -11,3 +11,6 @@ class Solution:
             nums.remove(min(nums)) #remove bob min int
             arr.append(alice) #append alice min int to output arra
         return arr #return output
+
+
+#O(N)
